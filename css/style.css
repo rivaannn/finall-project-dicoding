@@ -1,11 +1,11 @@
-/* Reset CSS */
+/* reset style css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Style untuk Typography */
+/* style untuk body */
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
@@ -13,18 +13,18 @@ body {
   color: #343a40;
 }
 
-/* End Styke Typograhpy */
+/* end style untuk body */
 
-/* Style untuk Container */
+/* style untuk container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* End Style Container */
+/* end style untuk container */
 
-/* Style untuk header */
+/* style untuk header */
 header {
   background-color: #343a40;
   color: #fff;
@@ -116,12 +116,12 @@ main {
 }
 /* end style untuk main content */
 
-/* Rounded Image */
+/* rounded image */
 .rounded-img {
   border-radius: 50%;
 }
 
-/* About Section */
+/* about section */
 .about-social {
   display: flex;
   justify-content: space-between;
@@ -165,7 +165,7 @@ main {
   border-radius: 50%;
 }
 
-/* Portfolio Section */
+/* style untuk portfolio */
 .portfolio-article {
   background-color: #fff;
   padding: 40px;
@@ -198,7 +198,7 @@ main {
   margin-bottom: 10px;
 }
 
-/* Contact Section */
+/* contact section */
 .contant {
   background-color: #fff;
   padding: 20px;
@@ -245,9 +245,9 @@ footer {
   text-align: center;
 }
 
-/* Media Queries untuk Responsif */
+/* media query untuk mengatur responsive */
 @media only screen and (min-width: 768px) {
-  /* Header */
+  /* header */
   header {
     padding: 20px 0;
   }
@@ -260,12 +260,12 @@ footer {
     margin-top: 0;
   }
 
-  /* Main Content */
+  /* main content */
   main {
     padding: 40px;
   }
 
-  /* About Section */
+  /* about section */
   .about-social {
     flex-direction: row;
   }
