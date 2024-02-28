@@ -1,0 +1,277 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style untuk Typography */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* End Styke Typograhpy */
+
+/* Style untuk Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* End Style Container */
+
+/* Style untuk header */
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 20px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+header nav ul li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+/* end style untuk header */
+
+/* style untuk button */
+.btnDownload {
+  background: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.btnDownload:hover,
+.btnDownload:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #007bff;
+}
+
+.btnDownload:active {
+  opacity: 0.5;
+}
+
+.btnDownload a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btnDownload a:hover {
+  color: #007bff;
+}
+/* end style button */
+
+/* style untuk main content */
+main {
+  padding: 40px 0;
+}
+/* end style untuk main content */
+
+/* Rounded Image */
+.rounded-img {
+  border-radius: 50%;
+}
+
+/* About Section */
+.about-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.social-media ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media ul li {
+  margin-bottom: 20px;
+}
+
+.social-media ul li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Portfolio Section */
+.portfolio-article {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-article h3 {
+  color: #343a40;
+}
+
+.portfolio-article ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-article ul li {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.portfolio-article ul li:last-child {
+  margin-right: 0;
+}
+
+.portfolio-article ul li img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contant {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contant h3 {
+  color: #343a40;
+}
+
+.contant ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contant ul li {
+  margin-right: 20px;
+}
+
+.contant ul li:last-child {
+  margin-right: 0;
+}
+
+.contant ul li a img {
+  width: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.contant ul li a img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Media Queries untuk Responsif */
+@media only screen and (min-width: 768px) {
+  /* Header */
+  header {
+    padding: 20px 0;
+  }
+
+  header .container {
+    flex-wrap: nowrap;
+  }
+
+  header nav {
+    margin-top: 0;
+  }
+
+  /* Main Content */
+  main {
+    padding: 40px;
+  }
+
+  /* About Section */
+  .about-social {
+    flex-direction: row;
+  }
+
+  .about,
+  .social-media {
+    padding: 0 20px;
+  }
+}
